@@ -1,0 +1,57 @@
+{
+  "tabWidth": 4,
+  "printWidth": 100,
+  "parser": "typescript",
+  "semi": true,
+  "trailingComma": "none",
+  "singleQuote": true,
+  "jsxBracketSameLine": false,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": "{*.ts, *.tsx, *.d.ts}",
+      "options": {
+        "parser": "typescript",
+        "tabWidth": 4,
+        "printWidth": 100
+      }
+    },
+    {
+      "files": "{*.css, *.scss}",
+      "options": {
+        "parser": "scss",
+        "tabWidth": 4,
+        "printWidth": 120
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "parser": "babylon",
+        "semi": true,
+        "singleQuote": false
+      }
+    },
+    {
+      "files": "*.test.tsx",
+      "options": {
+        "semi": true
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "parser": "markdown",
+        "printWidth": 80,
+        "proseWrap": "always"
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
